@@ -1,0 +1,546 @@
+{
+  "intents": [
+    {
+      "intent": "احبك",
+      "examples": [
+        {
+          "text": "احبك"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "استفسار",
+      "examples": [
+        {
+          "text": "بأسالك اخوي"
+        },
+        {
+          "text": "بسألك"
+        },
+        {
+          "text": "بسالك"
+        },
+        {
+          "text": "بغيت اسالك"
+        },
+        {
+          "text": "سوال"
+        },
+        {
+          "text": "عندي سوال"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "الحال",
+      "examples": [
+        {
+          "text": "اخبارك"
+        },
+        {
+          "text": "علومك"
+        },
+        {
+          "text": "كيف الحال"
+        },
+        {
+          "text": "كيف حالك"
+        },
+        {
+          "text": "كيفك"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "السلام",
+      "examples": [
+        {
+          "text": "السلام عليكم"
+        },
+        {
+          "text": "السلام عليكم ورحمة الله وبركاتة"
+        },
+        {
+          "text": "سلام"
+        },
+        {
+          "text": "سلان"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "السوال_الثالث",
+      "examples": [
+        {
+          "text": "ما هو تطوير الويب؟"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "السوال_الثاني",
+      "examples": [
+        {
+          "text": "كيف تم تصميم الواجهة؟"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "السوال_الخامس",
+      "examples": [
+        {
+          "text": "ماهي قاعدة البيانات المستخدمة في الواجهة؟"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "السوال_الرابع",
+      "examples": [
+        {
+          "text": "ما هي الروبوتات ؟"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "الشكر",
+      "examples": [
+        {
+          "text": "شكرا"
+        },
+        {
+          "text": "مشكور"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "الى_اللقاء",
+      "examples": [
+        {
+          "text": "باي"
+        },
+        {
+          "text": "مع سلامة"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ترحيب",
+      "examples": [
+        {
+          "text": "الو"
+        },
+        {
+          "text": "لو سمحت"
+        },
+        {
+          "text": "يا بوت"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "سوال_الاول",
+      "examples": [
+        {
+          "text": "ماهي الاساليب الذكية"
+        },
+        {
+          "text": "من هي الاساليب الذكية ؟"
+        },
+        {
+          "text": "من هي الاساليب الذكية ؟ "
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "يعطيك_العافية",
+      "examples": [
+        {
+          "text": "يعطيك العافية"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "HTML , CSS , JS , Php تم تصميم الواجهة باستخدام الـ  "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#السوال_الثاني",
+      "dialog_node": "node_10_1625332897015",
+      "previous_sibling": "node_1_1625332498371"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "❤️ الله يستر عليك فمان الله "
+              },
+              {
+                "text": "❤️ نتقابل على خير ان شاء الله"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#الى_اللقاء",
+      "dialog_node": "node_10_1625334290010",
+      "previous_sibling": "node_1_1625334343652"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مؤسسة تجارية وطنية تأسست عام 2010 م مسجلة لدى وزارة التجارة ومتخصصة في المعدات الآلية والروبوت والذكاء الصناعي وتعتبر المنشأة التجارية الأولى من نوعها في خدمة الباحثين والمبتكرين في العالم العربي ومصنفة لدى مجلة فوربس العالمية كأحد أكثر الشركات ابداعا في المملكة العربية السعودية في أخر تصنيف عام 2015"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#سوال_الاول",
+      "dialog_node": "node_1_1625332498371",
+      "previous_sibling": "node_6_1625069047143"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "❤️ العفو يا حب "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#الشكر",
+      "dialog_node": "node_1_1625334343652",
+      "previous_sibling": "مرحبا"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "MySQL"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#السوال_الخامس",
+      "dialog_node": "node_3_1625333454788",
+      "previous_sibling": "node_5_1625333370013"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "تطوير الويب ‏ هو مصطلح واسع للاعمال المشاركة في تطوير المواقع الالكترونية للشبكة العنكبوتية العالمية للانترنت أو للإنترانت, تطوير الويب يتراوح ما بين تطوير صفحة ثابتة بسيطة بنص عادي إلى تطبيقات الإنترنت المعقدة والأعمال التجارية الإلكترونية وخدمات الشبكة الاجتماعية."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#السوال_الثالث",
+      "dialog_node": "node_5_1625333043042",
+      "previous_sibling": "node_10_1625332897015"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "الروبوت أو الروبوط ويمكن أن يسمى بالعربية الإنسان الآلي والرجل الآلي والإنسالة والجسمال، هو آلة مكانيكية قادرة على القيام بأعمال مبرمجة سلفا، إما بإشارة وسيطرة مباشرة من الإنسان أو بإشارة من برامج حاسوبية."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#السوال_الرابع",
+      "dialog_node": "node_5_1625333370013",
+      "previous_sibling": "node_5_1625333043042"
+    },
+    {
+      "type": "standard",
+      "title": "استفسار",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "أمرني "
+              },
+              {
+                "text": "عيوني لك تفضل"
+              },
+              {
+                "text": "سم أبوي وش بغيت"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "title": "اختار : ",
+            "options": [
+              {
+                "label": "من هي الاساليب الذكية ؟ ",
+                "value": {
+                  "input": {
+                    "text": "من هي الاساليب الذكية ؟"
+                  }
+                }
+              },
+              {
+                "label": "كيف تم تصميم الواجهة ؟ ",
+                "value": {
+                  "input": {
+                    "text": "كيف تم تصميم الواجهة ؟ "
+                  }
+                }
+              },
+              {
+                "label": "ما هو تطوير الويب ؟ ",
+                "value": {
+                  "input": {
+                    "text": "ما هو تطوير الويب ؟ "
+                  }
+                }
+              },
+              {
+                "label": "ما هي الروبوتات؟",
+                "value": {
+                  "input": {
+                    "text": "ما هي الروبوتات؟"
+                  }
+                }
+              },
+              {
+                "label": "ماهي قاعدة البيانات المستخدمة في الواجهة؟",
+                "value": {
+                  "input": {
+                    "text": "ماهي قاعدة البيانات المستخدمة في الواجهة؟"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#استفسار",
+      "dialog_node": "node_6_1625069047143",
+      "previous_sibling": "node_7_1625333598643"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "بخير يمال الخير"
+              },
+              {
+                "text": "بخير الحمدلله "
+              },
+              {
+                "text": "ما علينا خلاف ابشرك"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#الحال",
+      "dialog_node": "node_7_1625333598643",
+      "previous_sibling": "node_8_1625334213188"
+    },
+    {
+      "type": "standard",
+      "title": "ترحيب",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "يمرحبًا "
+              },
+              {
+                "text": "أهلا وسهلا"
+              },
+              {
+                "text": "هلابك  شرفتني "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#ترحيب",
+      "dialog_node": "node_8_1625067667400",
+      "previous_sibling": "node_3_1625333454788"
+    },
+    {
+      "type": "standard",
+      "title": "السلام",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "وعليكم السلام ورحمة الله بركاتة ، يا أهلا وسهلا"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#السلام",
+      "dialog_node": "node_8_1625067945688",
+      "previous_sibling": "node_8_1625067667400"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "❤️ الله يعافيك ما سوينا شي "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#يعطيك_العافية",
+      "dialog_node": "node_8_1625334213188",
+      "previous_sibling": "node_10_1625334290010"
+    },
+    {
+      "type": "standard",
+      "title": "أي شيء آخر",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "لم أفهم، يمكنك محاولة اعادة الصياغة"
+              },
+              {
+                "text": "هل يمكنك اعادة صياغة عبارتك؟ أنا لا فهم"
+              },
+              {
+                "text": "لم أفهم قصدك"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "أي شيء آخر",
+      "previous_sibling": "node_8_1625067945688",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "يا أهلا وسهلا ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مرحبا، كيف يمكنني مساعدتك؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "مرحبا"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": ":هل قصدت",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "كل ما سبق خطأ"
+    },
+    "human_agent_assist": {
+      "prompt": ":هل قصدت"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "بوت تعريفي",
+  "language": "ar",
+  "description": ""
+}
